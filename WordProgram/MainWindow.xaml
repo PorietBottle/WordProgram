@@ -1,0 +1,20 @@
+﻿<Window x:Class="WordProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordProgram"
+        mc:Ignorable="d"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        Title="ローマ字変換" Height="589" Width="915">
+    <Grid>
+        <TextBox x:Name="origin" Margin="10,46,219,0" TextWrapping="Wrap" Text="明日の天気は曇りです。" VerticalAlignment="Top" FontSize="10" Height="126"/>
+        <Label Content="ローマ字変換" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button Content="変換" VerticalAlignment="Top" Width="195" Click="Button_Click" Height="126" HorizontalAlignment="Right" Margin="0,46,7,0"/>
+        <TextBox x:Name="Result1" Margin="10,177,10,0" TextWrapping="Wrap" Text="ひらがな" VerticalAlignment="Top" FontSize="10" Height="126" IsReadOnly="True"/>
+        <TextBox x:Name="Result2" Margin="10,308,10,0" TextWrapping="Wrap" Text="ローマ字" VerticalAlignment="Top" FontSize="10" Height="126" IsReadOnly="True"/>
+        <TextBox x:Name="Result3" TextWrapping="Wrap" Text="確率" FontSize="10" IsReadOnly="True" Margin="10,441,10,8"/>
+
+    </Grid>
+</Window>
